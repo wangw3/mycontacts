@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myContacts" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myContacts" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myContacts" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myContacts" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My Contacts App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://cdn.foundation5.zurb.com/foundation.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="laege-12 columns">
+      <h1>myContacts</h1>
+      <br>
+
+    </div>
+  </div>
+  <div ng-view></div>
+</div>
+
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <!--script src="../node_modules/firebase/firebase.js"></script-->
+  <!--script src="../node_modules/angularfire/dist/angularfire.js"></script-->
+  <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDAnAp9QnLFNPHf6Cg2dAvzHzrsmEKSOyc",
+    authDomain: "mycontacts-48c9e.firebaseapp.com",
+    databaseURL: "https://mycontacts-48c9e.firebaseio.com",
+    projectId: "mycontacts-48c9e",
+    storageBucket: "mycontacts-48c9e.appspot.com",
+    messagingSenderId: "1060653988716"
+  };
+  firebase.initializeApp(config);
+</script>
+  <!--script src="../node_modules/jquery/dist/jquery.js"></script-->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+
+  
+  <script src="http://cdn.foundation5.zurb.com/foundation.js"></script>
+  <script src="app.js"></script>
+  <script src="contacts/contacts.js"></script>
+</body>
+</html>
